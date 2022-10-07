@@ -39,7 +39,6 @@ function App() {
             <input placeholder="Поиск..." />
           </div>
         </div>
-
         <div className="d-flex">
           {arr.map((obj) => (
             <Card title={obj.name} price={obj.price} image={obj.image} />
