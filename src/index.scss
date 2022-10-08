@@ -37,6 +37,41 @@ header {
   }
 }
 
+.cartEmpty {
+  text-align: center;
+
+  p {
+    width: 280px;
+    line-height: 24px;
+  }
+
+  .greenButton {
+    width: 245px;
+    margin-top: 20px;
+  }
+
+  button {
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    background: #9dd558;
+    border-radius: 18px;
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+      background: lighten($color: #9dd558, $amount: 5%);
+    }
+
+    &:active {
+      background: darken($color: #9dd558, $amount: 5%);
+    }
+  }
+}
+
 .search_block {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
@@ -51,7 +86,7 @@ header {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
